@@ -7,7 +7,7 @@
                         <div class="card-body">
                             <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="<?= base_url() ?>/assets_a/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
+                                <img src="<?= base_url() ?>/assets/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
                             </div>
                             <div class="dropdown">
                                 <button class="btn p-0" type="button" id="cardOpt2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="<?= base_url() ?>/assets_a/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
+                                <img src="<?= base_url() ?>/assets/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
                             </div>
                             <div class="dropdown">
                                 <button class="btn p-0" type="button" id="cardOpt2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,7 +53,7 @@
                         <div class="card-body">
                             <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="<?= base_url() ?>/assets_a/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
+                                <img src="<?= base_url() ?>/assets/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
                             </div>
                             <div class="dropdown">
                                 <button class="btn p-0" type="button" id="cardOpt2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +76,7 @@
                         <div class="card-body">
                             <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                                <img src="<?= base_url() ?>/assets_a/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
+                                <img src="<?= base_url() ?>/assets/img/icons/unicons/cube-secondary.png" alt="cube" class="rounded">
                             </div>
                             <div class="dropdown">
                                 <button class="btn p-0" type="button" id="cardOpt2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,7 +125,7 @@
               <p class="mb-2">Invoices have been paid to the company</p>
               <div class="d-flex">
                 <a href="javascript:void(0)" class="d-flex align-items-center me-3">
-                  <img src="<?= base_url() ?>/assets_a/img/icons/misc/pdf.png" alt="PDF image" width="23" class="me-2">
+                  <img src="<?= base_url() ?>/assets/img/icons/misc/pdf.png" alt="PDF image" width="23" class="me-2">
                   <h6 class="mb-0">invoices.pdf</h6>
                 </a>
               </div>
@@ -141,7 +141,7 @@
               <p class="mb-2">Project meeting with john @10:15am</p>
               <div class="d-flex flex-wrap">
                 <div class="avatar me-3">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/3.png" alt="Avatar" class="rounded-circle" />
+                  <img src="<?= base_url() ?>/assets/img/avatars/3.png" alt="Avatar" class="rounded-circle" />
                 </div>
                 <div>
                   <h6 class="mb-0">Lester McCarthy (Client)</h6>
@@ -160,19 +160,19 @@
               <p class="mb-2">5 team members in a project</p>
               <div class="d-flex align-items-center avatar-group">
                 <div class="avatar pull-up" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Vinnie Mostowy">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/5.png" alt="Avatar" class="rounded-circle">
+                  <img src="<?= base_url() ?>/assets/img/avatars/5.png" alt="Avatar" class="rounded-circle">
                 </div>
                 <div class="avatar pull-up" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Marrie Patty">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/12.png" alt="Avatar" class="rounded-circle">
+                  <img src="<?= base_url() ?>/assets/img/avatars/12.png" alt="Avatar" class="rounded-circle">
                 </div>
                 <div class="avatar pull-up" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Jimmy Jackson">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/9.png" alt="Avatar" class="rounded-circle">
+                  <img src="<?= base_url() ?>/assets/img/avatars/9.png" alt="Avatar" class="rounded-circle">
                 </div>
                 <div class="avatar pull-up" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Kristine Gill">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/6.png" alt="Avatar" class="rounded-circle">
+                  <img src="<?= base_url() ?>/assets/img/avatars/6.png" alt="Avatar" class="rounded-circle">
                 </div>
                 <div class="avatar pull-up" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" title="Nelson Wilson">
-                  <img src="<?= base_url() ?>/assets_a/img/avatars/14.png" alt="Avatar" class="rounded-circle">
+                  <img src="<?= base_url() ?>/assets/img/avatars/14.png" alt="Avatar" class="rounded-circle">
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@
                   <td>1</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/chrome.png" alt="Chrome" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/chrome.png" alt="Chrome" height="24" class="me-2">
                       <span>Chrome</span>
                     </div>
                   </td>
@@ -237,7 +237,7 @@
                   <td>2</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/safari.png" alt="Safari" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/safari.png" alt="Safari" height="24" class="me-2">
                       <span>Safari</span>
                     </div>
                   </td>
@@ -255,7 +255,7 @@
                   <td>3</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/firefox.png" alt="Firefox" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/firefox.png" alt="Firefox" height="24" class="me-2">
                       <span>Firefox</span>
                     </div>
                   </td>
@@ -273,7 +273,7 @@
                   <td>4</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/edge.png" alt="Edge" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/edge.png" alt="Edge" height="24" class="me-2">
                       <span>Edge</span>
                     </div>
                   </td>
@@ -291,7 +291,7 @@
                   <td>5</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/opera.png" alt="Opera" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/opera.png" alt="Opera" height="24" class="me-2">
                       <span>Opera</span>
                     </div>
                   </td>
@@ -309,7 +309,7 @@
                   <td>6</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/brave.png" alt="Brave" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/brave.png" alt="Brave" height="24" class="me-2">
                       <span>Brave</span>
                     </div>
                   </td>
@@ -327,7 +327,7 @@
                   <td>7</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/vivaldi.png" alt="Vivaldi" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/vivaldi.png" alt="Vivaldi" height="24" class="me-2">
                       <span>Vivaldi</span>
                     </div>
                   </td>
@@ -345,7 +345,7 @@
                   <td>8</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/uc.png" alt="UC Browser" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/uc.png" alt="UC Browser" height="24" class="me-2">
                       <span>UC Browser</span>
                     </div>
                   </td>
@@ -379,7 +379,7 @@
                   <td>1</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/windows.png" alt="Windows" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/windows.png" alt="Windows" height="24" class="me-2">
                       <span>Windows</span>
                     </div>
                   </td>
@@ -397,7 +397,7 @@
                   <td>2</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/mac.png" alt="Mac" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/mac.png" alt="Mac" height="24" class="me-2">
                       <span>Mac</span>
                     </div>
                   </td>
@@ -415,7 +415,7 @@
                   <td>3</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/ubuntu.png" alt="Ubuntu" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/ubuntu.png" alt="Ubuntu" height="24" class="me-2">
                       <span>Ubuntu</span>
                     </div>
                   </td>
@@ -433,7 +433,7 @@
                   <td>4</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/chrome.png" alt="Chrome" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/chrome.png" alt="Chrome" height="24" class="me-2">
                       <span>Chrome</span>
                     </div>
                   </td>
@@ -451,7 +451,7 @@
                   <td>5</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/cent.png" alt="Cent" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/cent.png" alt="Cent" height="24" class="me-2">
                       <span>Cent</span>
                     </div>
                   </td>
@@ -469,7 +469,7 @@
                   <td>6</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/linux.png" alt="Linux" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/linux.png" alt="Linux" height="24" class="me-2">
                       <span>Linux</span>
                     </div>
                   </td>
@@ -487,7 +487,7 @@
                   <td>7</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/fedora.png" alt="Fedora" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/fedora.png" alt="Fedora" height="24" class="me-2">
                       <span>Fedora</span>
                     </div>
                   </td>
@@ -505,7 +505,7 @@
                   <td>8</td>
                   <td>
                     <div class="d-flex align-items-center">
-                      <img src="<?= base_url() ?>/assets_a/img/icons/brands/vivaldi-os.png" alt="Vivaldi" height="24" class="me-2">
+                      <img src="<?= base_url() ?>/assets/img/icons/brands/vivaldi-os.png" alt="Vivaldi" height="24" class="me-2">
                       <span>Vivaldi</span>
                     </div>
                   </td>
@@ -692,10 +692,10 @@
 <?= $this->section('modal')?>
 <?= $this->endSection() ?>
 <?= $this->section('css')?>
-<link rel="stylesheet" href="<?= base_url() ?>/assets_a/vendor/css/pages/card-analytics.css" />
+<link rel="stylesheet" href="<?= base_url() ?>/assets/vendor/css/pages/card-analytics.css" />
 <?= $this->endSection() ?>
 <?= $this->section('js') ?>
-<script src="<?= base_url() ?>/assets_a/js/ui-cards-analytics.js"></script>
+<script src="<?= base_url() ?>/assets/js/ui-cards-analytics.js"></script>
 <?= $this->endSection() ?>
 
 
