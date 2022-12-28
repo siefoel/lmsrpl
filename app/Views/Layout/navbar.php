@@ -222,7 +222,7 @@
                             <div class="flex-shrink-0 me-3">
                               <div class="avatar">
                                 <img
-                                  src="<?= base_url()?>/assets_a/img/avatars/1.png"
+                                  src="<?= base_url()?>/assets/img/avatars/1.png"
                                   alt
                                   class="w-px-40 h-auto rounded-circle"
                                 />
@@ -291,7 +291,7 @@
                             <div class="flex-shrink-0 me-3">
                               <div class="avatar">
                                 <img
-                                  src="<?= base_url()?>/assets_a/img/avatars/2.png"
+                                  src="<?= base_url()?>/assets/img/avatars/2.png"
                                   alt
                                   class="w-px-40 h-auto rounded-circle"
                                 />
@@ -362,7 +362,7 @@
                             <div class="flex-shrink-0 me-3">
                               <div class="avatar">
                                 <img
-                                  src="<?= base_url()?>/assets_a/img/avatars/9.png"
+                                  src="<?= base_url()?>/assets/img/avatars/9.png"
                                   alt
                                   class="w-px-40 h-auto rounded-circle"
                                 />
@@ -435,7 +435,7 @@
                             <div class="flex-shrink-0 me-3">
                               <div class="avatar">
                                 <img
-                                  src="<?= base_url()?>/assets_a/img/avatars/5.png"
+                                  src="<?= base_url()?>/assets/img/avatars/5.png"
                                   alt
                                   class="w-px-40 h-auto rounded-circle"
                                 />
@@ -471,7 +471,7 @@
                             <div class="flex-shrink-0 me-3">
                               <div class="avatar">
                                 <img
-                                  src="<?= base_url()?>/assets_a/img/avatars/6.png"
+                                  src="<?= base_url()?>/assets/img/avatars/6.png"
                                   alt
                                   class="w-px-40 h-auto rounded-circle"
                                 />
@@ -557,7 +557,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="<?= base_url()?>/assets_a/img/avatars/1.png"
+                        src="<?= base_url()?>/assets/img/avatars/1.png"
                         alt
                         class="w-px-40 h-auto rounded-circle"
                       />
@@ -573,7 +573,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="<?= base_url()?>/assets_a/img/avatars/1.png"
+                                src="<?= base_url()?>/assets/img/avatars/1.png"
                                 alt
                                 class="w-px-40 h-auto rounded-circle"
                               />

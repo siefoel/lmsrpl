@@ -19,20 +19,6 @@
     LMSRPL | Admin
     </title>
 
-    <meta
-      name="description"
-      content="Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!"
-    />
-    <meta
-      name="keywords"
-      content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5"
-    />
-    <!-- Canonical SEO -->
-    <link
-      rel="canonical"
-      href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-    />
-
     <!-- Favicon -->
     <link
       rel="icon"
@@ -59,6 +45,8 @@
     <link rel="stylesheet" href="<?= base_url()?>/assets/css/style.css"/>
     <link rel="stylesheet" href="<?= base_url()?>/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"/>
     <link rel="stylesheet" href="<?= base_url()?>/assets/vendor/libs/typeahead-js/typeahead.css"/>
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/vendor/libs/select2/select2.css">
+    
     
     <!-- Vendors CSS -->
     
@@ -104,13 +92,13 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="<?= base_url() ?>/assets/js/jquery-3.6.0.min.js"></script>
-    <script src="<?= base_url()?>/assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="<?= base_url()?>/assets/vendor/libs/popper/popper.js"></script>
+    <!-- <script src="<?= base_url()?>/assets/vendor/libs/jquery/jquery.js"></script> -->
+    <!-- <script src="<?= base_url()?>/assets/vendor/libs/popper/popper.js"></script> -->
     <script src="<?= base_url()?>/assets/vendor/js/bootstrap.js"></script>
     <script src="<?= base_url()?>/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <!-- <script src="<?= base_url()?>/assets/vendor/libs/hammer/hammer.js"></script> -->
     <!-- <script src="<?= base_url()?>/assets/vendor/libs/i18n/i18n.js"></script> -->
-    <script src="<?= base_url()?>/assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <!-- <script src="<?= base_url()?>/assets/vendor/libs/typeahead-js/typeahead.js"></script> -->
     <script src="<?= base_url()?>/assets/vendor/js/menu.js"></script>
     <script src="<?= base_url()?>/assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
     <!-- endbuild -->
@@ -118,10 +106,11 @@
     <!-- Vendors JS -->
     <?= $this->renderSection('js') ?>
     <!-- Main JS -->
-    <script src="<?= base_url()?>/assets/js/main.js"></script>
-    <script src="<?= base_url()?>/assets/vendor/libs/datatables/jquery.dataTables.js"></script>
-    <script src="<?= base_url()?>/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="<?= base_url() ?>/assets/js/main.js"></script>
+    <script src="<?= base_url() ?>/assets/vendor/libs/datatables/jquery.dataTables.js"></script>
+    <script src="<?= base_url() ?>/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <script src="<?= base_url() ?>/assets/js/jquery.validate.min.js"></script>
+    <script src="<?= base_url() ?>/assets/vendor/libs/select2/select2.js"></script>
     <script>
       function notifsuccess(ket) {
         Swal.fire({
