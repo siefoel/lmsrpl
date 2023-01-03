@@ -2,24 +2,23 @@
 <?= $this->extend('Layout/wreaper'); ?>
 <?= $this->section('content') ?>
 <h4 class="fw-bold py-3 mb-4">
-  <span class="text-muted fw-light">Referensi /</span> Management User
+  <span class="text-muted fw-light">App /</span> Level User
 </h4>
 <div class="row ">
 <!-- Complex Headers -->
               <div class="card card-action">
               <div class="card-header align-items-center">
-                <h5 class="card-action-title mb-0">Daftar User Login</h5>
+                <h5 class="card-action-title mb-0">Daftar Level User</h5>
                 <div class="card-action-element">
                   <button class="btn btn-primary btn-md" type="button" data-bs-toggle="modal" data-bs-target="#add"><i class="bx bx-plus bx-xs me-1"></i>Tambah Data</button>
                 </div>
               </div>
                 <div class="card-datatable text-nowrap">
-                  <table class="dt-complex-header table table-user">
+                  <table class="dt-complex-header table table-level">
                     <thead>
                       <tr>
-                        <th>No</th>
-                        <th>Email</th>
-                        <th>Level</th>
+                        <th>Id</th>
+                        <th>Nama Level</th>
                         <th>Status</th>
                         <th>Action</th>
                       </tr>
@@ -37,30 +36,13 @@
               <div class="modal-content">
                 <form action="" method="POST" id="fmlevel">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel1">Tambah User Login</h5>
+                  <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Level</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                      <label for="email" class="form-label">email</label>
-                      <input type="email" id="email" name="emaill" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="pasword" class="form-label">Pasword</label>
-                      <input type="password" id="pasword" name="pasword" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="password1" class="form-label">Confirm Password</label>
-                      <input type="password" id="password1" name="password1" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="level" class="form-label">Level</label>
-                      <select id="level" name="level" class="select2 form-select form-select-lg" data-allow-clear="true">
-                          <option value="AK">Alaska</option>
-                          <option value="HI">Hawaii</option>
-                          <option value="CA">California</option>
-                          <option value="NV">Nevada</option>
-                        </select>
+                      <label for="nama_level" class="form-label">Nama Level</label>
+                      <input type="text" id="nama_level" name="nama_levell" class="form-control">
                     </div>
                     <div class="form-group mt-2">
                       <label for="status" class="form-label">Status</label>
@@ -85,7 +67,10 @@
 <script>
     var table;
     $(document).ready(function() {
-        table = $(".table-user").DataTable();
+        table = $(".table-level").DataTable();
     });
 </script>
 <?= $this->endSection() ?>
+
+
+          

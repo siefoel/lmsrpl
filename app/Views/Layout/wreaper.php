@@ -111,6 +111,7 @@
     <script src="<?= base_url() ?>/assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <script src="<?= base_url() ?>/assets/js/jquery.validate.min.js"></script>
     <script src="<?= base_url() ?>/assets/vendor/libs/select2/select2.js"></script>
+    <script src="<?= base_url() ?>/assets/js/forms-selects.js"></script>
     <script>
       function notifsuccess(ket) {
         Swal.fire({

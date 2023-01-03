@@ -5,8 +5,11 @@
 <div class="row">
   <div class="col"><h5>Daftar Alamat Wilayah Indonesia</h5></div>
   <div class="col d-flex justify-content-end">
-    <button class="btn btn-primary btn=md" style="margin-right:5px;" data-bs-toggle="modal" data-bs-target="#addPro"><i class="bx bx-plus bx-xs me-1"></i> Provinsi</button>
-    <button class="btn btn-success btn=md" data-bs-toggle="modal" data-bs-target="#addKota"><i class="bx bx-plus bx-xs me-1"></i> Kota/Kabupaten</button></div>
+    <button class="btn btn-primary btn-md" style="margin-right:5px;" data-bs-toggle="modal" data-bs-target="#addPro"><i class="bx bx-plus bx-xs me-1"></i> Provinsi</button>
+    <button class="btn btn-success btn-md" style="margin-right:5px;" data-bs-toggle="modal" data-bs-target="#addKota"><i class="bx bx-plus bx-xs me-1"></i> Kota/Kabupaten</button>
+    <button class="btn btn-warning btn-md" style="margin-right:5px;" data-bs-toggle="modal" data-bs-target="#addKec"><i class="bx bx-plus bx-xs me-1"></i> Kecamatan</button>
+    <button class="btn btn-danger btn-md" data-bs-toggle="modal" data-bs-target="#addDesa"><i class="bx bx-plus bx-xs me-1"></i> Desa / Keluarahan</button>
+  </div>
     
 </div>
 <div class="row">
@@ -53,7 +56,7 @@
 <div class="modal fade" id="addPro" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <form action="" method="POST" id="fmjurusan">
+                <form action="" method="POST" id="fmprov">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Provinsi</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -80,7 +83,7 @@
           <div class="modal fade" id="addKota" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
-                <form action="" method="POST" id="fmjurusan">
+                <form action="" method="POST" id="fmkota">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Kota/ Kabupaten</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -88,66 +91,86 @@
                 <div class="modal-body">
                     <div class="form-group mb-2">
                       <label for="prov" class="form-label">Provinsi</label>
-                      <select id="select2Basic" class="select2 form-select form-select-lg" data-allow-clear="true">
+                      <select id="prov" name="prov" class="select2 form-select form-select-lg" data-allow-clear="true">
                           <option value="AK">Alaska</option>
                           <option value="HI">Hawaii</option>
-                          <option value="CA">California</option>
-                          <option value="NV">Nevada</option>
-                          <option value="OR">Oregon</option>
-                          <option value="WA">Washington</option>
-                          <option value="AZ">Arizona</option>
-                          <option value="CO">Colorado</option>
-                          <option value="ID">Idaho</option>
-                          <option value="MT">Montana</option>
-                          <option value="NE">Nebraska</option>
-                          <option value="NM">New Mexico</option>
-                          <option value="ND">North Dakota</option>
-                          <option value="UT">Utah</option>
-                          <option value="WY">Wyoming</option>
-                          <option value="AL">Alabama</option>
-                          <option value="AR">Arkansas</option>
-                          <option value="IL">Illinois</option>
-                          <option value="IA">Iowa</option>
-                          <option value="KS">Kansas</option>
-                          <option value="KY">Kentucky</option>
-                          <option value="LA">Louisiana</option>
-                          <option value="MN">Minnesota</option>
-                          <option value="MS">Mississippi</option>
-                          <option value="MO">Missouri</option>
-                          <option value="OK">Oklahoma</option>
-                          <option value="SD">South Dakota</option>
-                          <option value="TX">Texas</option>
-                          <option value="TN">Tennessee</option>
-                          <option value="WI">Wisconsin</option>
-                          <option value="CT">Connecticut</option>
-                          <option value="DE">Delaware</option>
-                          <option value="FL">Florida</option>
-                          <option value="GA">Georgia</option>
-                          <option value="IN">Indiana</option>
-                          <option value="ME">Maine</option>
-                          <option value="MD">Maryland</option>
-                          <option value="MA">Massachusetts</option>
-                          <option value="MI">Michigan</option>
-                          <option value="NH">New Hampshire</option>
-                          <option value="NJ">New Jersey</option>
-                          <option value="NY">New York</option>
-                          <option value="NC">North Carolina</option>
-                          <option value="OH">Ohio</option>
-                          <option value="PA">Pennsylvania</option>
-                          <option value="RI">Rhode Island</option>
-                          <option value="SC">South Carolina</option>
-                          <option value="VT">Vermont</option>
-                          <option value="VA">Virginia</option>
-                          <option value="WV">West Virginia</option>
                         </select>
                     </div>
                     <div class="form-group mb-2">
-                      <label for="kdjurusan" class="form-label">Kode Kota/ Kabupaten</label>
-                      <input type="text" id="kdjurusan" name="kd_jurusan" class="form-control">
+                      <label for="kd_kota" class="form-label">Kode Kota/ Kabupaten</label>
+                      <input type="text" id="kd_kota" name="kd_kota" class="form-control">
                     </div>
                     <div class="form-group">
-                      <label for="nmjurusan" class="form-label">Nama Kota/ Kabupaten</label>
-                      <input type="text" id="nmjurusan" name="nama_jurusan" class="form-control">
+                      <label for="nama_kota" class="form-label">Nama Kota/ Kabupaten</label>
+                      <input type="text" id="nama_kota" name="nama_kota" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Batal</button>
+                  <button type="submit" class="btn btn-info">Simpan</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="addKec" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <form action="" method="POST" id="fmkec">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Kecamatan</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                      <label for="kota" class="form-label">Kota / Kaabupaten</label>
+                      <select id="kota" name="kota" class="select2 form-select form-select-lg" data-allow-clear="true">
+                          <option value="AK">Alaska</option>
+                          <option value="HI">Hawaii</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2">
+                      <label for="kd_kec" class="form-label">Kecamatan</label>
+                      <input type="text" id="kd_kec" name="kd_kec" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="nama_kec" class="form-label">Nama kecamatan</label>
+                      <input type="text" id="nama_kec" name="nama_kec" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Batal</button>
+                  <button type="submit" class="btn btn-info">Simpan</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="addDesa" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <form action="" method="POST" id="fmdesa">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Desa</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                      <label for="kec" class="form-label">Kecamatan</label>
+                      <select id="kec" name="kec" class="select2 form-select form-select-lg" data-allow-clear="true">
+                          <option value="AK">Alaska</option>
+                          <option value="HI">Hawaii</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2">
+                      <label for="kd_desa" class="form-label">Kode Desa/ Kelurahan</label>
+                      <input type="text" id="kd_desa" name="kd_desa" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="nama_desa" class="form-label">Nama Desa/ Kelurahan</label>
+                      <input type="text" id="nama_desa" name="nama_desa" class="form-control">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -162,7 +185,6 @@
 <?= $this->section('css')?>
 <?= $this->endSection() ?>
 <?= $this->section('js') ?>
-<script src="<?= base_url() ?>/assets/js/forms-selects.js"></script>
 <?= $this->endSection() ?>
 
 

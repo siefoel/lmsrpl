@@ -2,16 +2,16 @@
 namespace Modul\Ref\Controllers;
 use App\Controllers\BaseController;
 
-class Tingkat extends BaseController
+class Mgmp extends BaseController
 {
     public function index()
     {
         $data = [
             'mref' => 1,
-            'smtingkat' => 1
+            'smmgmp' => 1
 
         ];
-        return view('Modul\Ref\Views\tingkat_v',$data);
+        return view('Modul\Ref\Views\mgmp_v',$data);
     }
     public function saveTingkat()
     {

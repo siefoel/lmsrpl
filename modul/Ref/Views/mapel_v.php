@@ -14,20 +14,13 @@
                   </div>
                 </div>
                 <div class="card-datatable text-nowrap">
-                  <table class="dt-complex-header table table-bordered">
+                  <table class="dt-complex-header table table-mapel">
                     <thead>
                       <tr>
-                        <th rowspan="2">Name</th>
-                        <th colspan="2">Contact</th>
-                        <th colspan="3">HR Information</th>
-                        <th rowspan="2">Action</th>
-                      </tr>
-                      <tr>
-                        <th>E-mail</th>
-                        <th>City</th>
-                        <th>Position</th>
-                        <th>Salary</th>
-                        <th class="border-1">Status</th>
+                        <th>Kode</th>
+                        <th>Nama Mata Pelajaran</th>
+                        <th>MGMP</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                   </table>
@@ -43,17 +36,26 @@
               <div class="modal-content">
                 <form action="" method="POST" id="fmmapel">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Tingkat</h5>
+                  <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Mata Pelajaran</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group ">
-                      <label for="kdtingkat" class="form-label">Kode Mata Pelajaran</label>
+                      <label for="kdmapel" class="form-label">Kode Mata Pelajaran</label>
                       <input type="text" id="kdmapel" name="kd_mapel" class="form-control mb-2">
                     </div>
                     <div class="form-group">
                       <label for="nmmapel" class="form-label">Nama Mata Pelajaran</label>
-                      <input type="text" id="nmmapel" name="nama_mapel" class="form-control">
+                      <input type="text" id="nmmapel" name="nama_mapel" class="form-control mb-2">
+                    </div>
+                    <div class="form-group">
+                      <label for="mgmp" class="form-label">Pilih MGMP</label>
+                      <select id="mgmp" name="mgmp" class="select2 form-select form-select-lg" data-allow-clear="true">
+                          <option value="AK">Alaska</option>
+                          <option value="HI">Hawaii</option>
+                          <option value="CA">California</option>
+                          <option value="NV">Nevada</option>
+                        </select>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -69,81 +71,10 @@
 <?= $this->endSection() ?>
 <?= $this->section('js') ?>
 <script>
-   var tabel;
+    var table;
     $(document).ready(function() {
-      $.validator.setDefaults({
-        submitHandler: function () {
-          $.ajax({
-                type:"POST",
-                url:"<?= base_url() ?>/ref/smapel",
-                data:$("#fmmapel").serialize(),
-                dataType:"JSON",
-                success:function (response) {
-                    if (response.status) {
-                        $('#add').modal('hide');
-                        notifsuccess("Data Berhasil di Simpan");
-                        $('#fmmapel')[0].reset();
-                      console.log(response.data)
-                        // tabel.ajax.reload();
-                    }else{
-                        $('#add').modal('hide');
-                        notifError("Data Gagal di Simpan");
-                        $('#fmmapel')[0].reset();
-                        // tabel.ajax.reload();
-                    }
-                }
-            });
-        },
-      });
-      validasiForm();
+        table = $(".table-mapel").DataTable();
     });
-
-    function validasiForm() {
-		var form = $("#fmmapel");
-        form.validate({
-						rules: {
-							kd_mapel: "required",
-							nama_mapel: "required",
-
-						},
-						messages: {
-							kd_mapel: "Kode Mata Pelajaran Harus di isi !!!",
-							nama_mapel: "Nama Mata Pelajaran Harus di isi !!!",				
-
-						},
-						errorPlacement: function (error, element) {
-					var $el = $(element);
-					var $parent = $el.parents(".form-group");
-					$el.addClass('is-invalid');
-
-						// Do not duplicate errors
-						if ($parent.find(".jquery-validation-error").length) {
-						return;
-						}
-
-						$parent.append(
-						error.addClass(
-							"jquery-validation-error small form-text invalid-feedback"
-						)
-						);
-				},
-				highlight: function (element, errorClass, validClass) {
-					var $el = $(element);
-					var $parent = $el.parents(".form-group");
-					$el.addClass('mb-1 is-invalid');
-					// $(element)
-					//   .parents(".form-grup")
-					//   .addClass("is-invalid")
-					//   .removeClass("is-valid");
-				},
-				unhighlight: function (element, errorClass, validClass) {
-					$(element)
-					.parents(".form-grup")
-					.addClass("is-valid")
-					.removeClass("is-invalid");
-				},
-			});
-    }
 </script>
 <?= $this->endSection() ?>
 

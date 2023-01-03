@@ -100,14 +100,14 @@
                     <div data-i18n="Jurusan">Jurusan</div>
                   </a>
                 </li>
-                <li class="menu-item <?= (empty($smtingkat)) ? '' : 'active' ?>">
-                  <a href="<?= base_url('ref/tingkat') ?>" class="menu-link">
-                    <div data-i18n="Tingkat">Tingkat</div>
-                  </a>
-                </li>
                 <li class="menu-item <?= (empty($smmapel)) ? '' : 'active' ?>">
                   <a href="<?= base_url('ref/mapel') ?>" class="menu-link">
                     <div data-i18n="Mata Pelajaran">Mata Pelajaran</div>
+                  </a>
+                </li>
+                <li class="menu-item <?= (empty($smmgmp)) ? '' : 'active' ?>">
+                  <a href="<?= base_url('ref/mgmp') ?>" class="menu-link">
+                    <div data-i18n="MGMP">Mgmp</div>
                   </a>
                 </li>
                 <li class="menu-item <?= (empty($smalamat)) ? '' : 'active' ?>">
@@ -129,12 +129,12 @@
                   </a>
                 </li>
                 <li class="menu-item <?= (empty($smlevel)) ? '' : 'active' ?>">
-                  <a href="<?= base_url('dakademi') ?>" class="menu-link">
+                  <a href="<?= base_url('app/leveluser') ?>" class="menu-link">
                     <div data-i18n="Level User">Level User</div>
                   </a>
                 </li>
                 <li class="menu-item <?= (empty($smtahun)) ? '' : 'active' ?>">
-                  <a href="<?= base_url('datajurusan') ?>" class="menu-link">
+                  <a href="<?= base_url('app/thnajar') ?>" class="menu-link">
                     <div data-i18n="Tahun Ajaran">Tahun Ajaran</div>
                   </a>
                 </li>
