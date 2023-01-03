@@ -1,5 +1,5 @@
 <?php
-namespace Modul\Ref\Controllers;
+namespace Modul\Admin\Controllers;
 use App\Controllers\BaseController;
 
 class Jurusan extends BaseController
@@ -7,8 +7,7 @@ class Jurusan extends BaseController
     public function index()
     {
         $data = [
-            'mref' => 1,
-            'smjurusan' => 1
+            'mjurusan' => 1
 
         ];
         return view('App\Views\Layout\page\jurusan_v',$data);

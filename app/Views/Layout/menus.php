@@ -140,5 +140,48 @@
                 </li>
               </ul>
             </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Admin</span>
+            </li>
+            </li>
+            <li class="menu-item <?= (empty($msiswa)) ? '' : 'active' ?>">
+              <a href="<?= base_url('admin/datasiswa') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+                <div data-i18n="Data Siswa">Data Siswa</div>
+              </a>
+            </li>
+            <li class="menu-item <?= (empty($mpegawai)) ? '' : 'active' ?>">
+              <a href="<?= base_url('admin/pegawai') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bxs-user-rectangle"></i>
+                <div data-i18n="Data Pegawai">Data Pegawai</div>
+              </a>
+            </li>
+            <li class="menu-item <?= (empty($mkelas)) ? '' : 'active' ?>">
+              <a href="<?= base_url('admin/datakelas') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bx-grid-alt"></i>
+                <div data-i18n="Data Kelas">Data Kelas</div>
+              </a>
+            </li>
+            <li class="menu-item <?= (empty($mjurusan)) ? '' : 'active' ?>">
+              <a href="<?= base_url('admin/datajurusan') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bx-grid-alt"></i>
+                <div data-i18n="Dashboards">Data Jurusan</div>
+              </a>
+            </li>
+            <li class="menu-item <?= (empty($mpembelajaran)) ? '' : 'active' ?>">
+              <a href="<?= base_url('admin/pembelajaran') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="Setting Pembelajaran">Setting Pembelajaran</div>
+              </a>
+            </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Guru</span>
+            </li>
+            <li class="menu-item <?= (empty($mmgmp)) ? '' : 'active' ?>">
+              <a href="<?= base_url('guru/mgmp') ?>" class="menu-link">
+			          <i class="menu-icon tf-icons bx bx-cog"></i>
+                <div data-i18n="MGMP">MGMP</div>
+              </a>
+            </li>
         </aside>
         <!-- / Menu -->
