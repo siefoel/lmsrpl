@@ -146,14 +146,14 @@
             </li>
             <li class="menu-item <?= (empty($msiswa)) ? '' : 'active' ?>">
               <a href="<?= base_url('admin/datasiswa') ?>" class="menu-link">
-			          <i class="menu-icon tf-icons bx bxs-user-circle"></i>
+			          <i class="menu-icon tf-icons bx bxs-user-rectangle"></i>
                 <div data-i18n="Data Siswa">Data Siswa</div>
               </a>
             </li>
             <li class="menu-item <?= (empty($mpegawai)) ? '' : 'active' ?>">
               <a href="<?= base_url('admin/pegawai') ?>" class="menu-link">
 			          <i class="menu-icon tf-icons bx bxs-user-rectangle"></i>
-                <div data-i18n="Data Pegawai">Data Pegawai</div>
+                <div data-i18n="Data Pegawai">Data Guru & Pegawai</div>
               </a>
             </li>
             <li class="menu-item <?= (empty($mkelas)) ? '' : 'active' ?>">

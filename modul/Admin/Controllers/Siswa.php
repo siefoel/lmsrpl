@@ -10,7 +10,7 @@ class Siswa extends BaseController
             'msiswa' => 1
 
         ];
-        return view('Modul\Admin\Views\mapel_v',$data);
+        return view('Modul\Admin\Views\siswa_v',$data);
     }
     public function saveMapel()
     {

@@ -10,7 +10,7 @@ class Pegawai extends BaseController
             'mpegawai' => 1
 
         ];
-        return view('Modul\Admin\Views\tingkat_v',$data);
+        return view('Modul\Admin\Views\pegawai_v',$data);
     }
     public function saveTingkat()
     {

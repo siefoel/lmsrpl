@@ -10,7 +10,7 @@ class Pembelajaran extends BaseController
             'mpembelajaran' => 1
 
         ];
-        return view('Modul\Admin\Views\tingkat_v',$data);
+        return view('Modul\Admin\Views\pembelajaran_v',$data);
     }
     public function saveTingkat()
     {

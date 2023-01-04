@@ -9,6 +9,6 @@ class Kelas extends BaseController
         $data = [
             'mkelas' => 1
         ];
-        return view('Modul\Admin\Views\alamat_v',$data);
+        return view('Modul\Admin\Views\kelas_v',$data);
     }
 }
