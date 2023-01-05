@@ -55,5 +55,7 @@ abstract class BaseController extends Controller
         $this->request    = Services::request();
         $this->db         = Database::connect();
         $this->uri        = service('uri');
+
+        $this->malamat = new \Modul\Ref\Models\Malamat();
     }
 }
