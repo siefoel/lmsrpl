@@ -64,8 +64,79 @@
 <script>
     var table;
     $(document).ready(function() {
+      falidasi_jurusan()
         table = $(".table-jurusan").DataTable();
     });
+    function falidasi_jurusan() {
+    $.validator.setDefaults({
+        submitHandler: function () {
+            $.ajax({
+                type:"POST",
+                url:"<?= base_url() ?>/ref/alamat/simpan",
+                data:$("#fmjurusan").serialize(),
+                dataType:"JSON",
+                success:function (response) {
+                    if (response.status) {
+                        console.log(response.status);
+                        $('#add').modal('hide');
+                        $('#fmjurusan')[0].reset();
+                        notifsuccess("Data Berhasil Disimpan")
+                        location.reload();
+                    }else{
+                        console.log(response.status);
+                        $('#add').modal('hide');
+                        $('#fmjurusan')[0].reset();
+                        notifError("Data Gagak Disimpan")
+                        location.reload();
+                        
+                    }
+                }
+            });
+        },
+      });
+    $("#fmjurusan").validate({
+          rules: {
+            kd_jurusan: "required",
+            nama_jurusan: "required",
+          },
+          messages: {
+            kd_jurusan: "Kode Jurusan harus di isi !!!",
+            nama_jurusan: "Nama Jurusan harus di isi !!!",
+          },
+        //   errorElement: "em",
+          errorPlacement: function (error, element) {
+            var $el = $(element);
+            var $parent = $el.parents(".form-group");
+            $el.addClass('is-invalid');
+
+                // Do not duplicate errors
+                if ($parent.find(".jquery-validation-error").length) {
+                return;
+                }
+
+                $parent.append(
+                error.addClass(
+                    "jquery-validation-error small form-text invalid-feedback"
+                )
+                );
+          },
+          highlight: function (element, errorClass, validClass) {
+            var $el = $(element);
+            var $parent = $el.parents(".form-group");
+            $el.addClass('mb-1 is-invalid');
+            // $(element)
+            //   .parents(".form-grup")
+            //   .addClass("is-invalid")
+            //   .removeClass("is-valid");
+          },
+          unhighlight: function (element, errorClass, validClass) {
+            $(element)
+              .parents(".form-grup")
+              .addClass("is-valid")
+              .removeClass("is-invalid");
+          },
+        });
+    }
 </script>
 <?= $this->endSection() ?>
 

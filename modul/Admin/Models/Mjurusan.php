@@ -1,11 +1,11 @@
 <?php
-namespace Modul\Manlevel\Models;
+namespace Modul\Admin\Models;
 use CodeIgniter\Model;
 
 class Mjurusan extends Model
 {
     protected $table = 'ref.jurusan';
-    protected $allowedFields = ['id','nama_level', 'status'];
+    protected $allowedFields = ['kode_jurusan','nama_jurusan'];
 
     public function levelActiv()
     {

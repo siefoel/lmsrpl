@@ -51,10 +51,11 @@
                   <div class="accordion-body">
                               <?php
                           if ($dkec) {
+                            $nkec = 0;
                             foreach ($dkec as $kec) {
                               if ($kec->id_kota == $kota->id) {
                               ?>
-                              <div class="accordion-item card">
+                              <div class="accordion-item card mt-1">
                             <h2 class="accordion-header d-flex align-items-center">
                               <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionWithIcon-<?= $kec->id ?>" aria-expanded="false">
                                 <i class="bx bx-briefcase me-2"></i>
@@ -64,34 +65,36 @@
                             <div id="accordionWithIcon-<?= $kec->id ?>" class="accordion-collapse collapse">
                               <div class="accordion-body">
                                       <?php  if ($ddesa) {
+                                        $ndesa = 0;
                                       foreach ($ddesa as $desa) {
                                         if ($desa->id_kecamatan == $kec->id) {
                                         ?>
-                                        <div class="accordion-item card">
+                                        <div class="accordion-item card mt-1">
                                       <h2 class="accordion-header d-flex align-items-center">
-                                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordionWithIcon-<?= $desa->id ?>" aria-expanded="false">
-                                          <i class="bx bx-briefcase me-2"></i>
+                                        <button type="button" class="accordion-button" aria-expanded="false">
+                                          
                                           <?= $desa->nama_desa ?>
                                         </button>
                                       </h2>
-                                      <div id="accordionWithIcon-<?= $desa->id ?>" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                          Dessert ice cream donut oat cake jelly-o pie sugar plum cheesecake. Bear claw dragée oat cake dragée ice
-                                          cream
-                                          halvah tootsie roll. Danish cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot
-                                          cake.
-                                          Fruitcake chocolate chupa chups.
-                                        </div>
-                                      </div>
                                     </div>
                                         <?php
+                                        $ndesa++;
                                         }
                                       }
+                                      if ($ndesa < 1) {
+                                        ?>
+                                        <div class="mt-1 p-4">
+                                            <h5 class="text-center">Tidak Ada Data</h5>
+                                            <p class="text-center" style="margin:-10px;">silakan tambahkan data Desa/Kelurahan dan pilih Kecamatan <?= $kec->nama_kecamatan; ?></p>
+                                        </div>
+                                        <?php
+                                        }
+
                                     }else{
                                       ?>
                                       <div class="mt-1 p-4">
                                           <h5 class="text-center">Tidak Ada Data</h5>
-                                          <p class="text-center" style="margin:-10px;">silakan tambahkan data kecamatan dan pilih <?= $kec->nama_kecamatan; ?></p>
+                                          <p class="text-center" style="margin:-10px;">silakan tambahkan data Desa/Kelurahan dan pilih Kecamatan <?= $kec->nama_kecamatan; ?></p>
                                       </div>
                                       <?php
                                     }
@@ -100,9 +103,17 @@
                             </div>
                           </div>
                               <?php
+                              $nkec++;
                               }
-                              
                             }
+                            if ($nkec < 1) {
+                              ?>
+                              <div class="mt-1 p-4">
+                                  <h5 class="text-center">Tidak Ada Data</h5>
+                                  <p class="text-center" style="margin:-10px;">silakan tambahkan data Kecamatan dan pilih <?= $kota->nama_kota; ?></p>
+                              </div>
+                              <?php
+                              }
                             
                           }else{
                             ?>
@@ -121,12 +132,10 @@
                   }
                 }
                 if ($nkota < 1) {
-                  # code...
-                
                               ?>
                               <div class="mt-1 p-4">
                                   <h5 class="text-center">Tidak Ada Data</h5>
-                                  <p class="text-center" style="margin:-10px;">silakan tambahkan data kecamatan dan pilih <?= $prov->nama_prov; ?></p>
+                                  <p class="text-center" style="margin:-10px;">silakan tambahkan data Kota/Kabupaten dan pilih provinsi <?= $prov->nama_prov; ?></p>
                               </div>
                               <?php
                               }
@@ -134,7 +143,7 @@
                 ?>
                 <div class="mt-1 p-4">
                     <h5 class="text-center">Tidak Ada Data</h5>
-                    <p class="text-center" style="margin:-10px;">silakan tambahkan data kota/kabupaten dan pilih provinsi <?= $prov->nama_prov; ?></p>
+                    <p class="text-center" style="margin:-10px;">silakan tambahkan data Kota/Kabupaten dan pilih provinsi <?= $prov->nama_prov; ?></p>
                 </div>
                 <?php
               }
