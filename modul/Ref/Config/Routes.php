@@ -4,6 +4,7 @@ $routes->group('ref',['namespace' => 'Modul\Ref\Controllers'], function ($routes
     $routes->add('datajurusan', 'Jurusan::datatable');
     $routes->add('sjurusan', 'Jurusan::simpan');
     $routes->add('mgmp', 'Mgmp::index');
+    $routes->add('datamgmp', 'Mgmp::datatable');
     $routes->add('stingkat', 'Tingkat::saveTingkat');
     $routes->add('mapel', 'Mapel::index');
     $routes->add('smapel', 'Mapel::saveMapel');
