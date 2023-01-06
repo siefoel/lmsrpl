@@ -65,14 +65,53 @@
     var table;
     $(document).ready(function() {
       falidasi_jurusan()
-        table = $(".table-jurusan").DataTable();
+      loadtable()
     });
+    function loadtable() {
+    tabel = $('.table-jurusan').DataTable({
+            processing: true,
+            serverSide: true,
+            responsive: true,
+            autoWidth: true,
+            info: true,
+            paging: true,
+            searching: true,
+        order: [],
+        ajax: {
+                url: '<?= base_url() ?>/ref/datajurusan',
+                method: 'POST',
+            },
+        columns: [{
+                    data: 'no',
+                    orderable: false,
+                    className: 'text-center align-middle',
+                    
+                },
+                {
+                    data: 'kode_jurusan',
+                    className: 'text-center align-middle',
+                    
+                },
+                {
+                    data: 'nama_jurusan',
+                    className: 'text-center align-middle',
+                    
+                },
+                {
+                    data: 'action',
+                    orderable: false,
+                    className: 'text-center align-middle',
+                    
+                },
+            ],
+    });
+}
     function falidasi_jurusan() {
     $.validator.setDefaults({
         submitHandler: function () {
             $.ajax({
                 type:"POST",
-                url:"<?= base_url() ?>/ref/alamat/simpan",
+                url:"<?= base_url() ?>/ref/sjurusan",
                 data:$("#fmjurusan").serialize(),
                 dataType:"JSON",
                 success:function (response) {

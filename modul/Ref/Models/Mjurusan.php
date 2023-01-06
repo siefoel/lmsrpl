@@ -1,21 +1,17 @@
 <?php
-namespace Modul\Manlevel\Models;
+namespace Modul\Ref\Models;
 use CodeIgniter\Model;
 
 class Mjurusan extends Model
 {
     protected $table = 'ref.jurusan';
-    protected $allowedFields = ['id','nama_level', 'status'];
+    protected $allowedFields = ['kode_jurusan','nama_jurusan'];
+    protected $useAutoIncrement = false;
 
-    public function levelActiv()
+    public function saveJurusan($data)
     {
-        
-            $tblprov = $this->db->table('ref.level');
-            $result = $tblprov->where('status', 1)->orderBy('nama_level','ASC')->get()->getResult();
-        
-        
+        $builder = $this->db->table('ref.jurusan');
+        $result = $builder->insert($data);
         return $result;
     }
-    
-
 }
